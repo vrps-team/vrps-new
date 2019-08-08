@@ -1,0 +1,115 @@
+@charset "ISO-8859-1";
+body{
+margin: 0;
+padding: 0;
+background-color:unset;
+font-family:sans-serif;
+}
+.lbox
+{
+width:250px;
+padding:40px;
+position:absolute;
+top:40%;
+left:40%;
+border: 2px solid #3498db;
+/*background:#c0392b;inear-gradient(120deg,#3498db,#8e44ad); */
+border-radius:10px;
+/* border-color:rgba(12, 141, 209, 0.9); */
+text-align: center;
+}
+.lbox h1
+{
+	color: #c0392b;
+	text-transform: uppercase;
+	font-weight: 400;
+    display: absolute;
+}
+.lbox input[type="text"],.lbox input[type="password"]
+{
+	border: 0;
+	background:none;
+    display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid #3498db;
+	width: 200px;
+	padding: 14px 10px;
+	outline: none;
+	color: black;
+	border-radius: 20px
+
+}
+.lbox input[type="text"]:focus,.lbox input[type="password"]:focus
+{
+ width: 240px;
+ border-color: #2ecc71;
+
+}
+.lbox input[type="submit"]
+{
+border:0;
+display: block;
+/* background:#e67e22; */
+margin: 20px auto;
+text-align: center;
+border: 2px solid #3498db;
+color: blue;
+padding: 14px 40px;
+border-radius: 20px;
+transition: 0.25s;
+cursor:pointer;
+}
+.virtusa_logo
+{
+	top:0;
+	left:0;
+	position:relative;
+	opacity:50%;
+	z-index: 2;
+}
+.bg_header
+{
+height:200px;
+width:100%;
+background-image: url(building.jpg);
+position: absolute;
+top:0;
+left:0;
+display: block;
+z-index: -1;
+background-repeat:repeat-x;
+animation: bg_header 30s linear infinite ;
+}
+@@keyframes bg_header {
+	100%{
+		transform: translateX(-3400px);}
+}
+/* .righttext
+{
+width:500px;
+padding:40px;
+position:absolute;
+top:50%;
+left:45%;
+color:blue;
+border:2px;
+border-radius:10px;
+text-align: center;
+} */
+.welcometext
+{
+	width:400px;
+	position:absolute;
+	top:20%;
+	left:5%;
+	text-align: center;
+	text-decoration: blink;
+}
+.welcometext h1
+{
+	color: white;
+	font-weight: 400;
+	text-decoration: blink;
+
+}
