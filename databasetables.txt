@@ -1,0 +1,71 @@
+desc personal_data;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL VARCHAR2(7)
+ NAME                                               VARCHAR2(30)
+ DOB                                                VARCHAR2(10)
+ GENDER                                             VARCHAR2(7)
+ MARITAL                                            VARCHAR2(8)
+ MOBILE                                             VARCHAR2(12)
+ EMAIL                                              VARCHAR2(25)
+ ADSRESS                                            VARCHAR2(100)
+ IMAGE                                              VARCHAR2(100)
+
+ desc work_data;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL VARCHAR2(7)
+ DESIGNATION                                        VARCHAR2(20)
+ CTC                                                VARCHAR2(12)
+ CURRENT_LOC                                        VARCHAR2(20)
+ REQUIRED_LOC                                       VARCHAR2(20)
+ EXPERIENCE                                         VARCHAR2(2)
+ TIER                                               VARCHAR2(6)
+ SKILLS                                             VARCHAR2(60)
+
+desc educational_data;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL VARCHAR2(7)
+ COURSE                                    NOT NULL VARCHAR2(30)
+ BRANCH                                             VARCHAR2(20)
+ COLLEGE                                            VARCHAR2(40)
+ PERCENTAGE                                         VARCHAR2(5)
+ PASS                                               VARCHAR2(10)
+
+desc projects_data;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                                 VARCHAR2(7)
+ TITLE                                              VARCHAR2(30)
+ S_DATE                                             VARCHAR2(10)
+ E_DATE                                             VARCHAR2(10)
+ DESCRIPTION                                        VARCHAR2(100)
+
+desc acheivements_data;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL VARCHAR2(7)
+ ACHEIVEMENT                               NOT NULL VARCHAR2(50)
+
+desc employee_status;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL VARCHAR2(10)
+ REFERENCEID                                        VARCHAR2(10)
+ STATUS                                             NUMBER(1)
+
+
+desc emp_login;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL VARCHAR2(10)
+ PASSWORD                                           VARCHAR2(50)
+ STATUS                                             NUMBER(1)
+
+desc adm_login;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ ID                                        NOT NULL VARCHAR2(10)
+ PASSWORD                                           VARCHAR2(60)
+ DESIGNATION                                        VARCHAR2(2)
